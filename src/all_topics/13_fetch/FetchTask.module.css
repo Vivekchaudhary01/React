@@ -1,0 +1,51 @@
+.FetchTaskContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.FetchTaskContainer > h1 {
+    margin: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Dropdown Container: align horizontally */
+.FetchTaskSectionContainer {
+    display: flex;
+    flex-direction: row;       /* horizontal layout */
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;           /* wrap on smaller screens */
+}
+
+/* Common select styling */
+.FetchTaskSectionContainer select {
+    padding: 10px 14px;
+    font-size: 1rem;
+    width: 220px;              /* fixed width to prevent expanding */
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.FetchTaskSectionContainer select:disabled {
+    background-color: #eaeaea;
+    cursor: not-allowed;
+}
+
+.resultText {
+    font-size: 1.1rem;
+    color: #444;
+    font-weight: 500;
+    margin-top: 20px;
+}
